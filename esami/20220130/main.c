@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
   while (fread(&v, sizeof(Record), 1, fp) == 1)
     aggiorna(&l, v);
   fclose(fp);
-  insertionSort(&l);
+  insertionSort(&l); // per la parte 2
   stampa(l);
   return 0;
 }
